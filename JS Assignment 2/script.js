@@ -1,39 +1,39 @@
-// assignment 4
+// // assignment 4
 
 
 
 
-// 3 variables in one statement:
+// // 3 variables in one statement:
 
-var var1, var2, var3;
+// var var1, var2, var3;
 
-// 5 legal variable names:
+// // 5 legal variable names:
 
-var myVariable;
-var _myVariable;
-var $myVariable;
-var variable1;
-var myVariableName;
+// var myVariable;
+// var _myVariable;
+// var $myVariable;
+// var variable1;
+// var myVariableName;
 
-// 5 illegal variable names:
+// // 5 illegal variable names:
 
-// var 1variable;   
-// var my-variable;  
-// var var;          
-// var my variable;  
-// var myVariable!;
-
-
-document.write("<h1>Rules for naming JS variables</h1>");
-document.write("Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable<br>");
-document.write("Variables must begin with a letter, underscore, or dollar sign. For example $name, _name or name<br>");
-document.write("Variable names are case sensitive.<br>");
-document.write("Variable names should not be JS keywords.");
+// // var 1variable;   
+// // var my-variable;  
+// // var var;          
+// // var my variable;  
+// // var myVariable!;
 
 
+// document.write("<h1>Rules for naming JS variables</h1>");
+// document.write("Variable names can only contain letters, numbers, underscores, and dollar signs. For example $my_1stVariable<br>");
+// document.write("Variables must begin with a letter, underscore, or dollar sign. For example $name, _name or name<br>");
+// document.write("Variable names are case sensitive.<br>");
+// document.write("Variable names should not be JS keywords.<br><br>");
 
 
-// assignment 5
+
+
+// // assignment 5
 
 
 
@@ -89,7 +89,7 @@ document.write("Variable names should not be JS keywords.");
 
 // // k.
 // var remainder = number % 3;
-// document.write("The remainder is: " + remainder + "<br>");
+// document.write("The remainder is: " + remainder + "<br><br>");
 
 
 
@@ -115,7 +115,7 @@ document.write("Variable names should not be JS keywords.");
 
 
 
-// assignment 6
+// // assignment 6
 
 
 
@@ -139,19 +139,13 @@ document.write("Variable names should not be JS keywords.");
 // document.write("Modulus 4: " + number + " % 4 = " + modulusResult + "<br>");
 
 
-// var a = 2;
-// var b = 1;
+var a = 2;
+var b = 1;
 
-// var result = --a - --b + ++b + b--; 
+var result = --a - --b + ++b + b--; 
 
-// // Final Output
-// console.log("a =", a);        // a = 1
-// console.log("b =", b);        // b = 0
-// console.log("result =", result);  // result = 3
+// Final Output
+console.log("a =", a);        // a = 1
+console.log("b =", b);        // b = 0
+console.log("result =", result);  // result = 3
 
-
-// // Prompt the user to enter their name
-// var userName = prompt("Irfan raza");
-
-// // Greet the user with an alert message
-// alert("Hello, " + userName + "! Welcome to our website.");
