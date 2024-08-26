@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- assignment 10 -->
+    <h2>Grade Calculator</h2>
+    <form id="marksForm">
+        <label for="subject1">Marks for Subject 1:</label>
+        <input type="number" id="subject1" required><br><br>
+
+        <label for="subject2">Marks for Subject 2:</label>
+        <input type="number" id="subject2" required><br><br>
+
+        <label for="subject3">Marks for Subject 3:</label>
+        <input type="number" id="subject3" required><br><br>
+
+        <label for="totalMarks">Total Marks:</label>
+        <input type="number" id="totalMarks" required><br><br>
+
+        <button type="button" onclick="calculateGrade()">Calculate</button>
+    </form>
+
+    <div class="result" id="result" style="display:none;">
+        <p id="totalObtained"></p>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <p id="remarks"></p>
+    </div>
+
+
+    <!-- assignment 11 -->
+
+    <h1>Calculator</h1>
+    <form id="calculator-form">
+        <label for="num1">First number:</label>
+        <input type="number" id="num1" step="any" required>
+        <br>
+        <label for="num2">Second number:</label>
+        <input type="number" id="num2" step="any" required>
+        <br>
+        <label for="operation">Operation (+, -, *, /, %):</label>
+        <input type="text" id="operation" required>
+        <br>
+        <button type="button" onclick="performCalculation()">Calculate</button>
+    </form>
+    <p id="result"></p>
+
+   <!-- assignment 13 -->
+
+   <h1>Time of Day Calculator</h1>
+   <form id="time-form">
+       <label for="time">Enter time in 24-hour format (e.g., 1900 for 7 PM):</label>
+       <input type="text" id="time" placeholder="HHMM" required>
+       <br>
+       <button type="button" onclick="determineTimeOfDay()">Submit</button>
+   </form>
+   <p id="results"></p>
+</body>
+<script src="js.js"></script>
+</html>
