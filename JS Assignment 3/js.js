@@ -6,25 +6,25 @@
 // // Greet the user with an alert message
 // alert("Hello, " + userName + "! Welcome to our website.");
 
-// function generateTable() {
-//     // Get the input value
-//     var number = document.getElementById("numberInput").value;
+function generateTable() {
+    // Get the input value
+    var number = document.getElementById("numberInput").value;
 
-//     // Default to 5 if no number is entered
-//     if (number === "") {
-//         number = 5;
-//     }
+    // Default to 5 if no number is entered
+    if (number === "") {
+        number = 5;
+    }
 
-//     // Generate the multiplication table
-//     var table = `<table><tr><th>Multiplication Table of ${number}</th></tr>`;
-//     for (var i = 1; i <= 10; i++) {
-//         table += `<tr><td>${number} x ${i} = ${number * i}</td></tr>`;
-//     }
-//     table += "</table>";
+    // Generate the multiplication table
+    var table = `<table><tr><th>Multiplication Table of ${number}</th></tr>`;
+    for (var i = 1; i <= 10; i++) {
+        table += `<tr><td>${number} x ${i} = ${number * i}</td></tr>`;
+    }
+    table += "</table>";
 
-//     // Display the table in the tableContainer div
-//     document.getElementById("tableContainer").innerHTML = table;
-// }
+    // Display the table in the tableContainer div
+    document.getElementById("tableContainer").innerHTML = table;
+}
 
 // assignment 8
 
@@ -51,6 +51,11 @@ var obtainedMarks3 = parseFloat(
 var totalPossibleMarks = totalMarksPerSubject * 3; // Since there are 3 subjects
 var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
 var percentage = (totalObtainedMarks / totalPossibleMarks) * 100;
+
+
+// assignment 9  
+
+
 
 // Display the result in the browser using a table
 document.write(`
@@ -88,3 +93,50 @@ document.write(`
          </tr>
      </table>
  `);
+
+ 
+// assignment 10
+
+function calculateGrade() {
+    // Get values from input fields
+    var marks1 = parseFloat(document.getElementById("subject1").value);
+    var marks2 = parseFloat(document.getElementById("subject2").value);
+    var marks3 = parseFloat(document.getElementById("subject3").value);
+    var totalMarks = parseFloat(document.getElementById("totalMarks").value);
+
+    // Calculate total obtained marks
+    var obtainedMarks = marks1 + marks2 + marks3;
+
+    // Calculate percentage
+    var percentage = (obtainedMarks / totalMarks) * 100;
+
+    // Determine grade based on percentage
+    var grade;
+    var remarks;
+    if (percentage >= 90) {
+        grade = 'A+';
+        remarks = 'Excellent';
+    } else if (percentage >= 80) {
+        grade = 'A';
+        remarks = 'Very Good';
+    } else if (percentage >= 70) {
+        grade = 'B';
+        remarks = 'Good';
+    } else if (percentage >= 60) {
+        grade = 'C';
+        remarks = 'Satisfactory';
+    } else if (percentage >= 50) {
+        grade = 'D';
+        remarks = 'Pass';
+    } else {
+        grade = 'F';
+        remarks = 'Fail';
+    }
+
+    // Display results
+    document.getElementById("totalObtained").innerHTML = `Total Marks Obtained: ${obtainedMarks}`;
+    document.getElementById("percentage").innerHTML = `Percentage: ${percentage.toFixed(2)}%`;
+    document.getElementById("grade").innerHTML = `Grade: ${grade}`;
+    document.getElementById("remarks").innerHTML = `Remarks: ${remarks}`;
+    document.getElementById("result").style.display = "block";
+}
