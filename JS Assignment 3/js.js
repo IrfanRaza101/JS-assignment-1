@@ -1,31 +1,3 @@
-// assignment 7
-
-// // Prompt the user to enter their name
-// var userName = prompt("Add Your Name");
-
-// // Greet the user with an alert message
-// alert("Hello, " + userName + "! Welcome to our website.");
-
-function generateTable() {
-    // Get the input value
-    var number = document.getElementById("numberInput").value;
-
-    // Default to 5 if no number is entered
-    if (number === "") {
-        number = 5;
-    }
-
-    // Generate the multiplication table
-    var table = `<table><tr><th>Multiplication Table of ${number}</th></tr>`;
-    for (var i = 1; i <= 10; i++) {
-        table += `<tr><td>${number} x ${i} = ${number * i}</td></tr>`;
-    }
-    table += "</table>";
-
-    // Display the table in the tableContainer div
-    document.getElementById("tableContainer").innerHTML = table;
-}
-
 // assignment 8
 
 // Step a: Take three subjects name from user and store them in different variables
