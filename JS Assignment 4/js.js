@@ -1,65 +1,15 @@
-
-// assignment 10
-
-function calculateGrade() {
-    // Get values from input fields
-    let marks1 = parseFloat(document.getElementById("subject1").value);
-    let marks2 = parseFloat(document.getElementById("subject2").value);
-    let marks3 = parseFloat(document.getElementById("subject3").value);
-    let totalMarks = parseFloat(document.getElementById("totalMarks").value);
-
-    // Calculate total obtained marks
-    let obtainedMarks = marks1 + marks2 + marks3;
-
-    // Calculate percentage
-    let percentage = (obtainedMarks / totalMarks) * 100;
-
-    // Determine grade based on percentage
-    let grade;
-    let remarks;
-    if (percentage >= 90) {
-        grade = 'A+';
-        remarks = 'Excellent';
-    } else if (percentage >= 80) {
-        grade = 'A';
-        remarks = 'Very Good';
-    } else if (percentage >= 70) {
-        grade = 'B';
-        remarks = 'Good';
-    } else if (percentage >= 60) {
-        grade = 'C';
-        remarks = 'Satisfactory';
-    } else if (percentage >= 50) {
-        grade = 'D';
-        remarks = 'Pass';
-    } else {
-        grade = 'F';
-        remarks = 'Fail';
-    }
-
-    // Display results
-    document.getElementById("totalObtained").innerHTML = `Total Marks Obtained: ${obtainedMarks}`;
-    document.getElementById("percentage").innerHTML = `Percentage: ${percentage.toFixed(2)}%`;
-    document.getElementById("grade").innerHTML = `Grade: ${grade}`;
-    document.getElementById("remarks").innerHTML = `Remarks: ${remarks}`;
-    document.getElementById("result").style.display = "block";
-}
-
-
-
-
 // assignment 11
 
 
 // Function to display message based on temperature
 function showTemperatureMessage(temperature) {
-    if (temperature > 40) {
+    if (temperature >= 40) {
         alert("It is too hot outside.");
-    } else if (temperature > 30) {
+    } else if (temperature >= 30) {
         alert("The Weather today is Normal.");
-    } else if (temperature > 20) {
+    } else if (temperature >= 20) {
         alert("Today’s Weather is cool.");
-    } else if (temperature > 10) {
+    } else if (temperature >= 10) {
         alert("OMG! Today’s weather is so Cool.");
     } else {    
         alert("The temperature is too low.");
@@ -169,9 +119,6 @@ if (userPassword === null || userPassword === "") {
     // Show “Incorrect password” otherwise.
     alert("Incorrect password.");
 }
-
-
-
 
 
 
