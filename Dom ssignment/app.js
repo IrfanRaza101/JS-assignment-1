@@ -52,6 +52,7 @@ function updateTodo(id) {
             <button onclick="updateTodo(${id})">Update</button>
         `;
     }
+    inpVal.value = "";  
 }
 
 
