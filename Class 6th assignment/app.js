@@ -9,7 +9,7 @@ document.getElementById("getWeather").addEventListener("click", async () => {
 
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=9af28294619944a5a64190128250101&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=9af28294619944a5a64190128250101&q=${city}&aqi=no`
     );
 
     if (!response.ok) {
